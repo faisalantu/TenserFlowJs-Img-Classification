@@ -1,7 +1,20 @@
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
+import About from "./components/About";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import NotFound from "./components/NotFound";
 function App() {
     return (
         <div>
-            <h1 className='text-3xl font-bold underline'>Hello world!</h1>
+            <Toaster/>
+            <Header />
+            <Routes>
+                <Route path='/' element={<Home />}></Route>
+                <Route path='/about' element={<About />}></Route>
+                <Route path='*' element={<NotFound />}></Route>
+            </Routes>
         </div>
     );
 }
