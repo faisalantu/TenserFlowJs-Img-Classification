@@ -4,8 +4,8 @@ import CustomLink from './CustomLink'
 function Header() {
   return (
     <div className="bg-blue-50 text-blue-900 ">
-        <div className='justify-between p-4 hidden md:flex'>
-        <div className="font-semibold text-xl flex items-center">
+        <div className='justify-between p-4 md:flex'>
+        <div className="font-semibold text-xl flex items-center justify-center md:justify-start ">
            <span>Animal Image Classification</span>
         </div>
         <div className="flex justify-center items-center">
